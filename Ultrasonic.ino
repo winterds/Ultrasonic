@@ -2,7 +2,7 @@
 #include <Ultrasonic.h> 
 
 // กำหนด Ultrasonic ให้ชื่อ ultrasonic
-// โดยให้ Trig pin [เป็น input สร้างคลื่น] คือ 12 และ Echo pin [เป็น output รับคลื่น] คือ 13
+// โดยให้ Trigger pin [เป็น input สร้างคลื่น] คือ 12 และ Echo pin [เป็น output รับคลื่น] คือ 13
 Ultrasonic ultrasonic(12, 13); 
 
 // กำหนดตัวแปรประเภท int ชื่อ distance ใช้ในการเก็บค่าระยะห่างที่อ่านได้จาก Ultrasonic HC-SR04
