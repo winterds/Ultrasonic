@@ -2,10 +2,10 @@
 #include <Ultrasonic.h> 
 
 // กำหนด Ultrasonic ให้ชื่อ ultrasonic
-// โดยให้ Trigger pin [เป็น input สร้างคลื่น] คือ 12 และ Echo pin [เป็น output รับคลื่น] คือ 13
+// โดยให้ Trigger pin [เป็น input ส่งคลื่น] คือ 12 และ Echo pin [เป็น output รับคลื่น] คือ 13
 Ultrasonic ultrasonic(12, 13); 
 
-// กำหนดตัวแปรประเภท int ชื่อ distance ใช้ในการเก็บค่าระยะห่างที่อ่านได้จาก Ultrasonic HC-SR04
+// กำหนดตัวแปรประเภท int ชื่อ distance ใช้ในการเก็บค่าระยะห่างที่อ่านได้จาก HC-SR04
 int distance; 
 
 void setup() {
@@ -14,7 +14,7 @@ void setup() {
 }
 
 void loop() {
-  // ultrasonic.read(CM) เป็น function ที่ return ค่าระยะทางที่วัดได้ในหน่วยเซนติเมตร(cm)
+  // ultrasonic.read(CM) เป็น method ที่ return ค่าระยะทางที่วัดได้ในหน่วยเซนติเมตร(cm)
   // ในกรณีที่อยากได้ค่าระยะทางในหน่วยนิ้ว ให้ใช้ ultrasonic.read(INC) แทน
   distance = ultrasonic.read(CM); 
   
